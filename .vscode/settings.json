@@ -1,5 +1,14 @@
 {
     "python.analysis.extraPaths": [
         "./src"
-    ]
+    ],
+    "python.formatting.provider": "black",
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    }
 }
